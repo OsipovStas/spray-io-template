@@ -11,7 +11,7 @@ libraryDependencies ++= {
   val sprayV = "1.3.2"
   val sprayJSONV = "1.3.1"
   Seq(
-    "io.spray"            %%  "spray-can"     % sprayV withSources() withJavadoc(),
+    "io.spray" %% "spray-servlet" % sprayV withSources() withJavadoc(),
     "io.spray"            %%  "spray-routing" % sprayV withSources() withJavadoc(),
     "io.spray"            %%  "spray-json"    % sprayJSONV,
     "io.spray"            %%  "spray-testkit" % sprayV  % "test",
@@ -21,3 +21,5 @@ libraryDependencies ++= {
     "org.scalaz"          %%  "scalaz-core"   % "7.1.0"
   )
 }
+
+jetty()
